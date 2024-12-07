@@ -4,9 +4,13 @@ const btn = document.createElement('button');
 btn.style.opacity = 0;
 btn.style.width = '140px';
 btn.style.height = '40px';
+btn.style.position = 'relative';
+btn.style.bottom = '0px';
+btn.style.left = '0px';
 btn.addEventListener('click',()=>{
     navigator.clipboard.writeText(codes[i]);
 });
+document.body.appendChild(btn);
 function setCopy(i){
     num = i;
 }
