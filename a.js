@@ -11,7 +11,7 @@ btn.style.zIndex = '999';
 btn.addEventListener('click',()=>{
     navigator.clipboard.writeText(codes[num]);
 });
-document.body.append(btn);
+document.body.appendChild(btn);
 function setCopy(i){
     num = i;
 }
