@@ -1,6 +1,14 @@
 let codes = [];
-function copy(i){
+let num = 0;
+const btn = document.createElement('button');
+btn.style.opacity = 0;
+btn.style.width = '140px';
+btn.style.height = '40px';
+btn.addEventListener('click',()=>{
     navigator.clipboard.writeText(codes[i]);
+});
+function setCopy(i){
+    num = i;
 }
 codes.push(`//2-1
 Laya.Scene.load('./mainScene.json', Laya.Handler.create(null, (res: Laya.Scene) => {
@@ -326,4 +334,4 @@ this.resouceAScript.drawComplete.on(Event.COMPLETE, this, () => {
   this.resouceA3D.active = false;
   this.resouceBScript.onLoadedCompleted(this.resouceB3D);
 });`);
-console.log('[a.js] TOOL INJECTED')
+console.log('[a.js] TOOL INJECTED');
