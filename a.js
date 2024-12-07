@@ -7,10 +7,11 @@ btn.style.height = '40px';
 btn.style.position = 'relative';
 btn.style.bottom = '0px';
 btn.style.left = '0px';
+btn.style.zIndex = '999';
 btn.addEventListener('click',()=>{
     navigator.clipboard.writeText(codes[i]);
 });
-document.body.appendChild(btn);
+document.appendChild(btn);
 function setCopy(i){
     num = i;
 }
