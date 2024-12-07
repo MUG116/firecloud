@@ -326,3 +326,4 @@ this.resouceAScript.drawComplete.on(Event.COMPLETE, this, () => {
   this.resouceA3D.active = false;
   this.resouceBScript.onLoadedCompleted(this.resouceB3D);
 });`);
+console.log('[a.js] TOOL INJECTED')
